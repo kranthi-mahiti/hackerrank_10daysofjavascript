@@ -40,18 +40,18 @@
 
 function vowelsAndConsonants(s) {
     const vowels = 'aeiou';
-    let consonants = 'bcdfghjklmnpqrstvwxyz';
-    let list ='';
+    let consonants = '';
+    let vowelList ='';
 
     for( var i = 0; i < s.length; i++) {
        if(vowels.indexOf(s[i]) >= 0) {
-           list += s[i];
-       } else if(consonants.indexOf(s[i]) >= 0) {
-            list += s[i];
+           vowelList += s[i] + '\n';
+       } else {
+            consonants += s[i] + '\n';
        }
     }
-    console.log(list);
-    return list;
+
+    console.log(vowelList + consonants.trim() );
 }
 
 vowelsAndConsonants('javascriptloops');

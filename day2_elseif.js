@@ -29,8 +29,6 @@
 // Because score=11, it satisfies the condition 10 < score <=15 (which corresponds to D). Thus, we return D as our answer.
 
 
-
-
 $(document).ready(function(){
     function gradeScore(score) {
         this.score = score;

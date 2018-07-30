@@ -35,7 +35,7 @@
 $(document).ready(function(){
     function getLetter(s) {
         this.s = s;
-        let firstChar = s[1].split('');
+        // let firstChar = s[1].split('');
         let letter;
         let firstBatch = 'aeiou';
         let secondBatch = 'bcdfg';
@@ -43,7 +43,7 @@ $(document).ready(function(){
         let fourthBatch = 'npqrstvwxyz';
 
         for( var i = 0; i < s.length; i++) {
-           letter = s.charAt(i);
+           letter = s.charAt(0);
 
             console.log('letter: ' + letter);
             
@@ -86,3 +86,25 @@ $(document).ready(function(){
 
     getLetter('adfgt');
 });
+
+// most simplified version
+
+// function getLetter(s) {
+//     let letter;
+//     // Write your code here
+//     switch (true) {
+//         case 'aeiou'.includes(s[0]):
+//             letter = 'A';
+//             break;
+//         case 'bcdfg'.includes(s[0]):
+//             letter = 'B';
+//             break;
+//         case 'hjklm'.includes(s[0]):
+//             letter = 'C';
+//             break;
+//         case 'npqrstvwxyz'.includes(s[0]):
+//             letter = 'D';
+//             break;
+//     }
+//     return letter;
+// }
